@@ -1,0 +1,7 @@
+<Alloy>
+    <TableViewRow id="deviceRow" alloy_id="{alloy_id}" class="deviceTableViewRow" sortId="{sortId}">
+        <Label class="deviceRowLbl" text="{displayName}"></Label>
+        <Label class="deviceRowTypeLbl" text="{type}"></Label>
+        <Switch id="deviceRowSwitch" class="deviceRowSwitch" titleOn="Visible"></Switch>
+    </TableViewRow>
+</Alloy>

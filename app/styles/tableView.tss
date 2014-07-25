@@ -1,0 +1,17 @@
+"#win":{
+    layout:'vertical',
+    backgroundColor:'#eee'
+},
+"#devicesTableView":{
+    top:'5%',
+    height:'75%',
+//    editable: true,
+//    moveable: true,
+//    moving:true
+},
+"#closeBtn":{
+    top:'80%'
+},
+"#deleteDataBtn":{
+    top:'90%'
+}

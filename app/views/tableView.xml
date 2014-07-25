@@ -1,0 +1,11 @@
+<Alloy>
+    <Window id="win" tabBarHidden="true">
+        <View class="container-view">
+            <TableView id="devicesTableView" dataCollection="device">
+                <Require src="tableViewRow"/>
+            </TableView>
+            <Button id="closeBtn">Save and Close</Button>
+            <Button id="deleteDataBtn">Delete Data</Button>
+        </View>
+    </Window>
+</Alloy>

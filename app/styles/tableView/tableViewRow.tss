@@ -27,4 +27,24 @@
 ".deviceRowSortIdTxt":{
     left:'80%',
 	height:'80%',
+},
+
+//Android differences
+".deviceRowTypeLbl[platform=android]":{
+    left:'45%'
+},
+".deviceRowSwitch[platform=android]":{
+    left:'55%',
+},
+"#moveUp[platform=android]": {
+   left:'77%',
+   font: {
+     fontSize: 20
+   }
+ },
+"#moveDown[platform=android]": {
+    left:'85%',
+    font: {
+        fontSize: 20
+    }
 }

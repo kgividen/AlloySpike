@@ -20,7 +20,7 @@ exports.definition = {
         },
         "adapter" : {
             "type" : "sql",
-            "collection_name" : "devices"
+            "collection_name" : "alloySpikeDevices"
         }
     },
 

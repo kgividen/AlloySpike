@@ -2,8 +2,9 @@
     <Window id="win" tabBarHidden="true">
         <View class="container-view">
             <TableView id="devicesTableView" dataCollection="device">
-                <Require src="tableViewRow"/>
+                <Require src="tableView/tableViewRow"/>
             </TableView>
+            <Button id="addRowBtn">Add Row</Button>
             <Button id="closeBtn">Save and Close</Button>
             <Button id="deleteDataBtn">Delete Data</Button>
         </View>

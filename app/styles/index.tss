@@ -2,12 +2,8 @@
     layout:'vertical',
     backgroundColor:'#eee'
 },
-"#devicesTableView":{
-    top:'1%',
-    height:'75%',
-//    editable: true,
-    moveable: true,
-    moving:true
+"#openTableViewBtn":{
+    top:'25%'
 },
 "#closeBtn":{
     top:'80%'

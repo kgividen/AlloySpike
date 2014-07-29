@@ -1,0 +1,15 @@
+<Alloy>
+    <TableViewRow id="deviceRow" alloy_id="{alloy_id}" class="deviceTableViewRow" sortId="{sortId}" platform="ios">
+        <Label class="deviceRowLbl" text="{displayName}" />
+        <Label class="deviceRowTypeLbl" text="{type}" />
+        <Switch id="deviceRowSwitch" class="deviceRowSwitch" titleOn="Visible" />
+    </TableViewRow>
+    <TableViewRow id="deviceRow" alloy_id="{alloy_id}" className="deviceRow" class="deviceTableViewRow" sortId="{sortId}" platform="android">
+        <Label class="deviceRowLbl" text="{displayName}" />
+        <Label class="deviceRowTypeLbl" text="{type}" />
+        <Switch id="deviceRowSwitch" class="deviceRowSwitch" titleOn="Visible" />
+        <Label id="moveUp" icon="fa-arrow-circle-up" action="moveUp"></Label>
+        <Label id="moveDown" icon="fa-arrow-circle-down" action="moveDown"></Label>
+        <Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+    </TableViewRow>
+</Alloy>

@@ -6,11 +6,14 @@
     top:'5%',
     height:'75%',
 //    editable: true,
-//    moveable: true,
-//    moving:true
+    moveable: true,
+    moving:true
+},
+"#addRowBtn":{
+    top:'80%'
 },
 "#closeBtn":{
-    top:'80%'
+    top:'85%'
 },
 "#deleteDataBtn":{
     top:'90%'

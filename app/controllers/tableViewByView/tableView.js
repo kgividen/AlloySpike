@@ -3,7 +3,6 @@ function updateViewsSortOrder(deviceTvData){
     var i = 0;
     _.each(deviceTvData, function (d) {
         var model = Alloy.Collections.device.get(d.alloy_id);
-        Ti.API.info("model: " + JSON.stringify(model));
         if (model) model.save({sortId: i}, {silent: true});
         i++;
     });
@@ -23,6 +22,8 @@ function updateViewsSortOrderAndroid(){
 //Start here
 Alloy.Collections.device.fetch();
 
+
+
 //Listeners
 $.closeBtn.addEventListener("click", function(){
     if(osname=="android"){
@@ -37,7 +38,7 @@ $.closeBtn.addEventListener("click", function(){
 });
 
 $.createFakeDataBtn.addEventListener("click", function(){
-    var fakeData = createFakeData(250);
+    var fakeData = createFakeData(10);
     Alloy.Collections.device.reset(fakeData);
     _.each(fakeData, function (item) {
         var deviceModel = Alloy.createModel('Device', item);
@@ -96,6 +97,12 @@ function swapRows(indexOne, indexTwo) {
     data[indexTwo] = temp;
     $.devicesTableView.data = data;
 }
+
+
+
+
+
+
 
 //Utility Functions
 

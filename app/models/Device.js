@@ -1,20 +1,20 @@
 exports.definition = {
     config : {
         "columns" : {
-            "sortId" : "INTEGER",
+//            "sortId" : "INTEGER",
             "name" : "TEXT",
             "displayName" : "TEXT",
             "address" : "TEXT",
-            "showInView" : "INTEGER",
+//            "showInView" : "INTEGER",
             "type" : "TEXT",
             "parent" : "TEXT"
         },
         "defaults" : {
-            "sortId" : 0,
+//            "sortId" : 0,
             "name" : "",
             "displayName" : "",
             "address" : "",
-            "showInView" : 0,
+//            "showInView" : 0,
             "type" : "unknown",
             "parent" : "unknown"
         },
@@ -35,7 +35,7 @@ exports.definition = {
     extendCollection : function(Collection) {
         _.extend(Collection.prototype, {
             comparator: function(collection) {
-                return collection.get('sortId');
+//                return collection.get('sortId');
             }
         });
         return Collection;

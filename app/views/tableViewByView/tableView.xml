@@ -2,7 +2,7 @@
     <Window id="win" tabBarHidden="true">
         <View class="container-view">
             <TableView id="devicesTableView" dataFunction="updateUI" dataCollection="device">
-                <Require src="tableView/tableViewRow"/>
+                <Require src="tableViewByView/tableViewRow"/>
             </TableView>
             <Button id="addRowBtn">Add Row</Button>
             <Button id="createFakeDataBtn">Create Fake Data</Button>

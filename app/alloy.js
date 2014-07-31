@@ -11,6 +11,9 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 
 Alloy.Collections.device = Alloy.createCollection("Device");
+Alloy.Collections.view = Alloy.createCollection("View");
+Alloy.Collections.deviceInView = Alloy.createCollection("DeviceInView");
+
 var osname = "android";
 if (Ti.Platform.osname === 'iphone' || Ti.Platform.osname === 'ipad') {
     osname = "ios";

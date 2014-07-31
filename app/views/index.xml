@@ -1,5 +1,6 @@
 <Alloy>
 	<Window id="win" class="container">
 		<Button id="openTableViewBtn" onClick="openTableView">Open Table View</Button>
-	</Window>
+        <Button id="openTableViewByViewBtn" onClick="openTableViewByView">Open Table View By View</Button>
+    </Window>
 </Alloy>

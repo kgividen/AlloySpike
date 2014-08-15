@@ -1,0 +1,7 @@
+<Alloy>
+    <Window id="countdownWin" modal="true" navBarHidden="true">
+        <View>
+            <Label id="countDownLabel" />
+        </View>
+    </Window>
+</Alloy>

@@ -2,5 +2,6 @@
 	<Window id="win" class="container">
 		<Button id="openTableViewBtn" onClick="openTableView">Open Table View</Button>
         <Button id="openTableViewByViewBtn" onClick="openTableViewByView">Open Table View By View</Button>
+        <Button id="openCountDown" onClick="openCountDown">Open CountDown</Button>
     </Window>
 </Alloy>

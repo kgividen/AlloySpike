@@ -1,0 +1,13 @@
+"#countdownWin":{
+    fullscreen:'true',
+},
+"#countDownLabel":{
+    font: {
+        fontWeight: 'bold',
+        fontSize: 72
+    },
+    color:'#eee',
+    shadowColor: 'black',
+    shadowOffset: {x:1, y:1},
+    shadowRadius: 1
+}

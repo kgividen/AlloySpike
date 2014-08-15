@@ -10,6 +10,10 @@ function openTableViewByView(){
     Alloy.createController("tableViewByView/tableView").getView().open();
 }
 
+function openCountDown(){
+    Alloy.createController("countdown").getView().open();
+}
+
 if(osname == "android") {
     $.win.addEventListener('open', function () {
         $.win.activity.actionBar.hide();

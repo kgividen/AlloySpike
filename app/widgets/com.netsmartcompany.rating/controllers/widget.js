@@ -1,3 +1,8 @@
+var OS_NAME = "android";
+if (Ti.Platform.osname === 'iphone' || Ti.Platform.osname === 'ipad') {
+    OS_NAME = "ios";
+}
+
 var APP_ID = '',
     APP_NAME = '',
     APP_TXT = '',
@@ -20,11 +25,11 @@ $.run = function(){
         Ti.App.Properties.setInt('com.netsmartcompany.timesRun' + APP_ID, 0);
     }
 
-    Ti.API.info("timesRun: " + timesRun + " hasRated: " + hasRated + " debug: " + APP_DEBUG);
+    //Ti.API.info("timesRun: " + timesRun + " hasRated: " + hasRated + " debug: " + APP_DEBUG);
     if(!hasRated || APP_DEBUG) {
         $.appTitle.text = APP_NAME;
         $.appBody.text = APP_TXT;
-        Ti.API.info("timesRun: " + timesRun + " timesRunMod:" + timesRun % APP_RUN_EVERY + " debug: " + APP_DEBUG);
+        //Ti.API.info("timesRun: " + timesRun + " timesRunMod:" + timesRun % APP_RUN_EVERY + " debug: " + APP_DEBUG);
         if ((timesRun % APP_RUN_EVERY) == APP_RUN_EVERY -1 || APP_DEBUG) {
             Ti.API.info("open ratings!!");
             $.ratingWin.open();
@@ -45,15 +50,12 @@ function closeWin(){
 $.ratingView.addEventListener('click', function(e) {
     var action = e.source.action;
     if (action === "rate") {
-        if (osname == 'ios') {
-            Ti.API.info("APP_ID: " + APP_ID);
+        if (OS_NAME == 'ios') {
             Ti.Platform.openURL('itms-apps://itunes.apple.com/app/id' + APP_ID);
         } else {
             Ti.Platform.openURL('market://details?id=' + APP_ID);
         }
-
         Titanium.App.Properties.setBool('com.netsmartcompany.hasRated.' + APP_ID, true);
-
     } else if (action === "bummer") {
         Titanium.App.Properties.setBool('com.netsmartcompany.hasRated.' + APP_ID, true);
     }

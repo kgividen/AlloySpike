@@ -1,0 +1,3 @@
+[submodule "app/widgets/com.netsmartcompany.rating"]
+	path = app/widgets/com.netsmartcompany.rating
+	url = ../com.netsmartcompany.rating.git

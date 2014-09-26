@@ -8,6 +8,7 @@
 	"os:ios": {},
 	"os:mobileweb": {},
 	"dependencies": {
-        "com.mattmcfarland.fontawesome": "*"
+        "com.mattmcfarland.fontawesome": "*",
+        "com.netsmartcompany.rating": "*"
     }
 }

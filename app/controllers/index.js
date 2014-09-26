@@ -20,19 +20,20 @@ function openLinkInStore(){
     Ti.Platform.openURL('itms://itunes.apple.com/us/app/fun-memory-game/id881939773?mt=8&uo=4');
 }
 
-function openRatings(){
-    //If it's run 10 times then open it
-    var appId = "APPID",   //App ID for itunes or GooglePlay
-        appName = "CoolApp", //Name of you APP for the Title
-        appMsg = "If you enjoy using CoolApp, would you mind taking a moment to rate it?  Thanks!",//Message you want to display to the user to get them to rate it.
-        runEvery = 3, //How many times can they run the app before being prompted to rate it.
-        appDebug = false; //If set to true it will run it every time.
-    Alloy.createController("rating").run(appId, appName, appMsg, runEvery, appDebug);
+//If it's run 10 times then open it
+var appId = "APPID",   //App ID for itunes or GooglePlay
+    appName = "CoolApp", //Name of you APP for the Title
+    appMsg = "If you enjoy using CoolApp, would you mind taking a moment to rate it?  Thanks!",//Message you want to display to the user to get them to rate it.
+    runEvery = 3, //How many times can they run the app before being prompted to rate it.
+    appDebug = false; //If set to true it will run it every time.
+$.rating.init(appId, appName, appMsg, runEvery, appDebug);
+
+function openRatingWidget(){
+    $.rating.run();
 }
 
 function clearRating() {
-    var appId = "APPID";
-    Alloy.createController("rating").clear(appId);
+    $.rating.clear();
 }
 
 if(osname == "android") {

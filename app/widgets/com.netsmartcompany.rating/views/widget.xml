@@ -2,12 +2,12 @@
     <Window id="ratingWin" class="modalWin" navBarHidden="true" modal="true">
         <View id="ratingView" class="modalView">
             <View class="verticalView">
-                <Label id="appTitle"></Label>
-                <Label id="appBody"></Label>
+                <Label id="appTitle" />
+                <Label id="appBody" />
             </View>
             <TableView id="ratingTableView">
                 <TableViewRow>
-                    <Label class="option" text="Rate it" action="rate" />
+                    <Label id="rateLbl" class="option" text="Rate it" action="rate" />
                 </TableViewRow>
                 <TableViewRow>
                     <Label class="option" text="Remind me later" action="remind" />

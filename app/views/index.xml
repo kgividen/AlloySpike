@@ -1,10 +1,11 @@
 <Alloy>
-	<Window id="win" class="container">
-		<Button id="openTableViewBtn" onClick="openTableView">Open Table View</Button>
+    <Widget id="rating" src="com.netsmartcompany.rating"/>
+    <Window id="win" class="container">
+        <Button id="openTableViewBtn" onClick="openTableView">Open Table View</Button>
         <Button id="openTableViewByViewBtn" onClick="openTableViewByView">Open Table View By View</Button>
         <Button id="openCountDown" onClick="openCountDown">Open CountDown</Button>
         <Button id="openLinkInStore" onClick="openLinkInStore">Open Link in Apple Store</Button>
-        <Button id="openRatingsView" onClick="openRatings">Open Ratings</Button>
+        <Button id="openRatingsViewWidget" onClick="openRatingWidget">Open Rating Widget</Button>
         <Button id="clearRatingView" onClick="clearRating">Clear Ratings</Button>
     </Window>
 </Alloy>

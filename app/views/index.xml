@@ -4,7 +4,6 @@
     <Window id="win" class="container">
         <Button id="openTableViewBtn" onClick="openTableView">Open Table View</Button>
         <Button id="openTableViewByViewBtn" onClick="openTableViewByView">Open Table View By View</Button>
-        <Button id="openCountDown" onClick="openCountDown">Open CountDown Controller</Button>
         <Button id="openCountDownWidget" onClick="openCountDownWidget">Open CountDown Widget</Button>
         <Button id="openLinkInStore" onClick="openLinkInStore">Open Link in Apple Store</Button>
         <Button id="openRatingsViewWidget" onClick="openRatingWidget">Open Rating Widget</Button>

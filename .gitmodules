@@ -1,3 +1,6 @@
 [submodule "app/widgets/com.netsmartcompany.rating"]
 	path = app/widgets/com.netsmartcompany.rating
 	url = ../com.netsmartcompany.rating.git
+[submodule "app/widgets/AlloyCountDownWidget"]
+	path = app/widgets/AlloyCountDownWidget
+	url = ../AlloyCountDownWidget.git

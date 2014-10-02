@@ -37,6 +37,10 @@ var appId = "APPID",   //App ID for itunes or GooglePlay
     appDebug = true; //If set to true it will run it every time.
 $.rating.init(appId, appName, appMsg, runEvery, appDebug);
 
+$.win.addEventListener('open', function(e) {
+    $.rating.run();
+});
+
 function openRatingWidget(){
     $.rating.run();
 }

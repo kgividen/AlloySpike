@@ -4,3 +4,6 @@
 [submodule "app/widgets/AlloyCountDownWidget"]
 	path = app/widgets/AlloyCountDownWidget
 	url = ../AlloyCountDownWidget.git
+[submodule "app/widgets/photogrid"]
+	path = app/widgets/photogrid
+	url = ../../manumaticx/photogrid

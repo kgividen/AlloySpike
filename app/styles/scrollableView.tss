@@ -1,0 +1,12 @@
+"Window" : {
+    layout:"vertical"
+},
+".tableView" : {
+    backgroundColor: "gray"
+},
+"#scroll" : {
+    height: "90%"
+},
+".btn" : {
+//    backgroundColor : "blue"
+}

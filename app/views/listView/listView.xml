@@ -1,0 +1,24 @@
+<Alloy>
+    <Window id="win" tabBarHidden="true">
+        <View class="container-view">
+            <View id="listViewContainer">
+                <ListView id="list" defaultItemTemplate="template">
+                    <Templates>
+                        <ItemTemplate name="template">
+                            <Label bindId="displayName" class="deviceRowLbl"/>
+                            <Label bindId="itemType" class="deviceRowTypeLbl" />
+                            <!--<Switch bindId="deviceRowSwitch" class="deviceRowSwitch" onChange="deviceRowChange"/>-->
+                        </ItemTemplate>
+                    </Templates>
+                    <ListSection dataTransform="doTransform" dataCollection="device">
+                        <ListItem class="listItem" modelId="{modelId}" displayName:text="{displayName}" itemType:text="{type}"  sortId="{sortId}" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_CHECKMARK"/>
+                    </ListSection>
+                </ListView>
+            </View>
+            <Button id="addRowBtn">Add Row</Button>
+            <Button id="createFakeDataBtn">Create Fake Data</Button>
+            <Button id="closeBtn">Save and Close</Button>
+            <Button id="deleteDataBtn">Delete Data</Button>
+        </View>
+    </Window>
+</Alloy>

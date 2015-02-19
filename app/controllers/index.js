@@ -5,6 +5,22 @@ function openTableView(){
     Alloy.createController("tableView/tableView").getView().open();
 }
 
+function openListView(){
+    Alloy.createController("listView/listView").getView().open();
+}
+
+function openScrollableView(){
+    Alloy.createController("scrollableView").getView().open();
+}
+
+function openTestView(){
+    Alloy.createController("test").getView().open();
+}
+
+function openTableViewSecond(){
+    Alloy.createController("tableViewSecond/tableView").getView().open();
+}
+
 function openTableViewByView(){
     Alloy.Collections.deviceInView.fetch();
     Alloy.Globals.deviceInViewJSON = Alloy.Collections.deviceInView.toJSON(); //So we can access it in the tableViewRow
@@ -29,12 +45,31 @@ function openLinkInStore(){
     Ti.Platform.openURL('itms://itunes.apple.com/us/app/fun-memory-game/id881939773?mt=8&uo=4');
 }
 
+
+function openPhotoGrid(){
+    var data = [
+            {title:'President Thomas S Monson', thumb:'/images/apostles/Monson_tn.png', image:'http://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/president-thomas-s-monson-lds-591264-gallery.jpg'},
+            {title:'President Henry B Eyring', thumb:'/images/apostles/Eyring_tn.png', image:'http://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/president-henry-b-eyring-lds-462519-gallery.jpg'},
+            {title:'President Dieter F Uchtdorf', thumb:'/images/apostles/Uchtdorf_tn.png', image: 'http://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/president-dieter-f-uchtdorf-lds-495749-gallery.jpg'},
+            {title:'President Boyd K Packer', thumb:'/images/apostles/Packer_tn.png', image: 'http://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/elder-boyd-k-packer-lds-82365-gallery.jpg'}
+        ];
+
+    var photogrid = Alloy.createWidget("de.manumaticx.photogrid");
+
+    var gridWindow = photogrid.createWindow({
+        data: data,
+        showTitle: true
+    });
+
+    gridWindow.open();
+}
+
 //If it's run 10 times then open it
 var appId = "APPID",   //App ID for itunes or GooglePlay
     appName = "CoolApp", //Name of you APP for the Title
     appMsg = "If you enjoy using CoolApp, would you mind taking a moment to rate it?  Thanks!",//Message you want to display to the user to get them to rate it.
-    runEvery = 3, //How many times can they run the app before being prompted to rate it.
-    appDebug = true; //If set to true it will run it every time.
+    runEvery = 10, //How many times can they run the app before being prompted to rate it.
+    appDebug = false; //If set to true it will run it every time.
 $.rating.init(appId, appName, appMsg, runEvery, appDebug);
 
 $.win.addEventListener('open', function(e) {

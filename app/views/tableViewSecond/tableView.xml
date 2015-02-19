@@ -1,0 +1,12 @@
+<Alloy>
+    <Collection id="device2" src="Device" instance="true"/>
+    <Window id="win" tabBarHidden="true">
+        <View class="container-view">
+            <TableView id="devicesTableView" dataCollection="$.device2">
+                <Require src="tableViewSecond/tableViewRow"/>
+            </TableView>
+            <Button id="createFakeDataBtn">Create Fake Data</Button>
+            <Button id="closeBtn">Save and Close</Button>
+        </View>
+    </Window>
+</Alloy>

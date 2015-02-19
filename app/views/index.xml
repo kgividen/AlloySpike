@@ -2,11 +2,16 @@
     <Widget id="rating" src="com.netsmartcompany.rating"/>
     <Widget id="countdownWidget" src="AlloyCountDownWidget"/>
     <Window id="win" class="container">
+        <Button id="openListViewBtn" onClick="openListView">Open List View</Button>
         <Button id="openTableViewBtn" onClick="openTableView">Open Table View</Button>
+        <Button id="openTestViewBtn" onClick="openTestView">Open Test View</Button>
+        <Button id="openTableViewSecondBtn" onClick="openTableViewSecond">Open Table View Second</Button>
         <Button id="openTableViewByViewBtn" onClick="openTableViewByView">Open Table View By View</Button>
         <Button id="openCountDownWidget" onClick="openCountDownWidget">Open CountDown Widget</Button>
         <Button id="openLinkInStore" onClick="openLinkInStore">Open Link in Apple Store</Button>
         <Button id="openRatingsViewWidget" onClick="openRatingWidget">Open Rating Widget</Button>
         <Button id="clearRatingView" onClick="clearRating">Clear Ratings</Button>
+        <Button id="openScrollableView" onClick="openScrollableView">Open Scrollable View</Button>
+        <Button id="openPhotoGrid" onClick="openPhotoGrid">Open Photo Grid View</Button>
     </Window>
 </Alloy>

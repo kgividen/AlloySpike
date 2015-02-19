@@ -1,0 +1,24 @@
+"#win":{
+    layout:'vertical',
+    backgroundColor:'#eee'
+},
+".container-view":{
+    layout:'vertical',
+    backgroundColor:'transparent'
+},
+"#devicesTableView":{
+    top:'5%',
+    height:'70%',
+//    editable: true,
+    moveable: true,
+    moving:true
+},
+"#addRowBtn":{
+//    top:'80%'
+},
+"#closeBtn":{
+//    top:'85%'
+},
+"#deleteDataBtn":{
+//    top:'90%'
+}

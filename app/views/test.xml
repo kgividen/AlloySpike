@@ -1,0 +1,12 @@
+<Alloy>
+<Window id="win" tabBarHidden="true">
+    <TableView>
+        <TableViewRow id="charactersRow">
+            <View id="charactersView">
+                <Label id="characterCount" />
+            </View>
+        </TableViewRow>
+    </TableView>
+    <TextArea id="newBubbleText" onChange="bubbleTextChange" />
+</Window>
+</Alloy>

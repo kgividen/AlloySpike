@@ -1,0 +1,16 @@
+<Alloy>
+    <Collection id="device" src="Device" instance="true"/>
+    <Window id="win">
+        <ScrollableView  id="scroll" class="container" showPagingControl="true">
+            <TableView class="tableView" dataFilter="filter1" dataCollection="$.device">
+                <Require src="scrollTVRow" />
+            </TableView>
+            <TableView class="tableView" dataCollection="$.device">
+                <Require src="scrollTVRow" />
+            </TableView>
+        </ScrollableView>
+        <View>
+            <Button id="closeBtn">Close</Button>
+        </View>
+    </Window>
+</Alloy>

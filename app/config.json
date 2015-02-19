@@ -10,6 +10,7 @@
 	"dependencies": {
         "com.mattmcfarland.fontawesome": "*",
         "com.netsmartcompany.rating": "*",
-        "AlloyCountDownWidget": "*"
+        "AlloyCountDownWidget": "*",
+        "de.manumaticx.photogrid": "*"
     }
 }

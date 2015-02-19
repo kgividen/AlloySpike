@@ -1,0 +1,7 @@
+<Alloy>
+    <TableViewRow id="deviceRow" class="deviceTableViewRow">
+        <Label class="deviceRowLbl" text="{displayName}" />
+        <!--<Button id="btn" class="deviceRowBtn" title="{displayName}" />-->
+        <Button id="btn" class="deviceRowBtn" />
+    </TableViewRow>
+</Alloy>

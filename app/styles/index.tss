@@ -2,9 +2,6 @@
     layout:'vertical',
     backgroundColor:'#eee'
 },
-"#openTableViewBtn":{
-    top:'25%'
-},
 "#closeBtn":{
     top:'80%'
 }

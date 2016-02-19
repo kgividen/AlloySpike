@@ -6,4 +6,4 @@
 	url = ../AlloyCountDownWidget.git
 [submodule "app/widgets/photogrid"]
 	path = app/widgets/photogrid
-	url = ../../manumaticx/photogrid
+	url = https://github.com/kgividen/photogrid.git

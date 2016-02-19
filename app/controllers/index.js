@@ -45,6 +45,11 @@ function openLinkInStore(){
     Ti.Platform.openURL('itms://itunes.apple.com/us/app/fun-memory-game/id881939773?mt=8&uo=4');
 }
 
+function openCircularSliderView(){
+    Ti.API.info("open circular slider View!!");
+    Alloy.createController("circularSlider").getView().open();
+}
+
 
 function openPhotoGrid(){
     var data = [
@@ -58,6 +63,7 @@ function openPhotoGrid(){
 
     var gridWindow = photogrid.createWindow({
         data: data,
+        interval: 3000,
         showTitle: true
     });
 

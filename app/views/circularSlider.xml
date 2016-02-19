@@ -1,0 +1,8 @@
+<Alloy>
+	<Window backgroundColor="white" id="win">
+		<View id="container"   class="container">
+			<Label id="currentVal">100</Label>
+			<!-- <View  id="blahView" zIndex="10" height="250" width="250" borderRadius="125" backgroundColor="red"></View> -->
+		</View>
+	</Window>
+</Alloy>

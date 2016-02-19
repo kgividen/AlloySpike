@@ -13,5 +13,6 @@
         <Button id="clearRatingView" onClick="clearRating">Clear Ratings</Button>
         <Button id="openScrollableView" onClick="openScrollableView">Open Scrollable View</Button>
         <Button id="openPhotoGrid" onClick="openPhotoGrid">Open Photo Grid View</Button>
+        <Button id="openCircularSliderView" onClick="openCircularSliderView">Open Circular Slider View</Button>
     </Window>
 </Alloy>

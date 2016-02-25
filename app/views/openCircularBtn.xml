@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="win" backgroundColor="white">
+		<View id="container" class="container">
+			<View id="button" width="70" height="70" backgroundImage="/images/btn-off.png" >
+				<Label id="currentVal" top="1%"></Label>
+				<Label id="btnName" top="60%">L On</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

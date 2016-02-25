@@ -1,8 +1,11 @@
 <Alloy>
-	<Window backgroundColor="white" id="win">
-		<View id="container"   class="container">
-			<Label id="currentVal">100</Label>
-			<!-- <View  id="blahView" zIndex="10" height="250" width="250" borderRadius="125" backgroundColor="red"></View> -->
+	<Window id="win" layout="vertical" backgroundColor="white">
+		<Button top="20" onClick="setTo40">Set circular to 40</Button>
+		<View top="10">
+			<View id="container">
+				<Label top="10" id="currentVal">0</Label>
+				<Label top="10" id="currentVal2">0</Label>
+			</View>	
 		</View>
 	</Window>
 </Alloy>

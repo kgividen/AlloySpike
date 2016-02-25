@@ -1,13 +1,10 @@
 <Alloy>
-<Window id="win" tabBarHidden="true">
-    <!-- <TableView>
-        <TableViewRow id="charactersRow">
-            <View id="charactersView">
-                <Label id="characterCount" />
-            </View>
-        </TableViewRow>
-    </TableView>
-    <TextArea id="newBubbleText" onChange="bubbleTextChange" /> -->
-    <View></View>
-</Window>
+	<Window id="win" backgroundColor="white">
+		<!-- <View id="container" class="container"> -->
+			<!-- <Widget id="btn" top="100" height="50" width="50" btnBackgroundColor="white" btnOnColor="red" btnOffColor="gray" src="btnCircularSlider"/> -->
+			<!-- <Widget id="btn" top="100" src="btnCircularSlider"/>
+			<Widget id="btn2" top="200" src="btnCircularSlider"/>
+			<Widget id="btn3" top="300" src="btnCircularSlider"/>
+		</View> -->
+	</Window>
 </Alloy>

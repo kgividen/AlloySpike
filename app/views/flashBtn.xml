@@ -1,0 +1,17 @@
+<Alloy>
+<Window backgroundColor="white" id="win" tabBarHidden="true">
+    <!-- <TableView>
+        <TableViewRow id="charactersRow">
+            <View id="charactersView">
+                <Label id="characterCount" />
+            </View>
+        </TableViewRow>
+    </TableView>
+    <TextArea id="newBubbleText" onChange="bubbleTextChange" /> -->
+    <View>
+    	<View id="blahBtn" zIndex="2" width="100" height="100" backgroundImage="/images/btn.png" backgroundColor="transparent" onClick="btnClick">
+    		<View id="flash" opacity=".75" width="100" height="100" backgroundColor="transparent"></View>
+    	</View>
+	</View>
+</Window>
+</Alloy>

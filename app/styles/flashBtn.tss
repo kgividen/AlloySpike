@@ -1,0 +1,8 @@
+"Window":{
+    backgroundColor:'blueasdfa',
+    layout: 'vertical'
+},
+"TableView":{
+    height : '50%',
+    backgroundColor:'blue'
+}

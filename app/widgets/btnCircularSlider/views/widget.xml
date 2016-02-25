@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="container" class="container">
+		<!-- <Label id="currentVal" top="1%"></Label> -->
+	</View>
+</Alloy>

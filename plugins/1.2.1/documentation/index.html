@@ -1,8 +1,7 @@
 <h1>TiCircularSlider</h1>
 <p>Circular slider with many customizations.
 Wrapper module for EFCircularSlider.</p>
-<img src="images/demo.gif" />
-
+<p><img src="images/demo.gif" /></p>
 <h3>Usage</h3>
 <p>TiCircularProgress is pretty much a ProgressView replacement.</p>
 <pre><code>var TiCircularSlider = require('de.marcelpociot.circularslider');
@@ -46,9 +45,33 @@ Default: <code>red</code></p>
 <p>Type: <code>Color</code><br />
 Default: <code>black</code></p>
 <p>Color for the unfilled (unselected) area of the slider.</p>
+<h4>labelFont</h4>
+<p>Type: <code>String</code><br />
+Default: (system-provided font-family)</p>
+<p>Font of the inner marking labels within the circle.</p>
+<h4>labelColor</h4>
+<p>Type: <code>Color</code><br />
+Default: <code>Black</code></p>
+<p>Color of the inner marking labels within the circle.</p>
+<h4>labelDisplacement</h4>
+<p>Type: <code>Float</code><br />
+Default: <code>0</code></p>
+<p>Value with which to displace all labels along radial line from center to slider circumference.
+Note: A negative value will move the label closer to the center. A positive value will move the 
+label closer to the circumference</p>
 <h2>Events</h2>
 <h3>change</h3>
 <p>Fired everytime the selection changes.</p>
+<h5>value</h5>
+<p>Type: <code>Float</code> <br />
+The current selected value</p>
+<h3>touchstart</h3>
+<p>Fired everytime the selection starts.</p>
+<h5>value</h5>
+<p>Type: <code>Float</code> <br />
+The current selected value</p>
+<h3>touchend</h3>
+<p>Fired everytime the selection stops.</p>
 <h5>value</h5>
 <p>Type: <code>Float</code> <br />
 The current selected value</p>

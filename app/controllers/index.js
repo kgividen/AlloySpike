@@ -1,5 +1,6 @@
 
 $.win.open();
+// Alloy.createController("test").getView().open();
 
 function openTableView(){
     Alloy.createController("tableView/tableView").getView().open();
@@ -48,6 +49,16 @@ function openLinkInStore(){
 function openCircularSliderView(){
     Ti.API.info("open circular slider View!!");
     Alloy.createController("circularSlider").getView().open();
+}
+
+function openCircularProgressBarView(){
+    Ti.API.info("open circular progress bar View!!");
+    Alloy.createController("circularProgressBar").getView().open();
+}
+
+function openCircularBtn(){
+    Ti.API.info("openCircularBtn!!");
+    Alloy.createController("openCircularBtn").getView().open();
 }
 
 

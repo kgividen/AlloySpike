@@ -1,0 +1,81 @@
+<h1>TiCircularSlider</h1>
+<p>Circular slider with many customizations.
+Wrapper module for EFCircularSlider.</p>
+<p><img src="images/demo.gif" /></p>
+<h3>Usage</h3>
+<p>TiCircularProgress is pretty much a ProgressView replacement.</p>
+<pre><code>var TiCircularSlider = require('de.marcelpociot.circularslider');
+
+var sliderView = TiCircularSlider.createView({
+    top: 200,
+    left: 50,
+    height: 250,
+    width: 250,
+    lineWidth: 5,
+    handleColor: 'red',
+    filledColor: '#d7d7d7',
+    unfilledColor: '#black'
+});
+sliderView.addEventListener('change',function(e)
+{
+    Ti.API.info( "Value is: ", e.value );
+});
+win.add( sliderView );
+</code></pre>
+<h2>Options</h2>
+<h4>lineWidth</h4>
+<p>Type: <code>Float</code><br />
+Default: <code>5</code></p>
+<p>The circle's line width.</p>
+<h4>minimumValue</h4>
+<p>Type: <code>Float</code><br />
+Default: <code>0.0</code></p>
+<h4>maximumValue</h4>
+<p>Type: <code>Float</code><br />
+Default: <code>100.0</code></p>
+<h4>handleColor</h4>
+<p>Type: <code>Color</code><br />
+Default: <code>red</code></p>
+<p>Color for the slider handle.</p>
+<h4>filledColor</h4>
+<p>Type: <code>Color</code><br />
+Default: <code>red</code></p>
+<p>Color for the filled (selected) area of the slider.</p>
+<h4>unfilledColor</h4>
+<p>Type: <code>Color</code><br />
+Default: <code>black</code></p>
+<p>Color for the unfilled (unselected) area of the slider.</p>
+<h4>labelFont</h4>
+<p>Type: <code>String</code><br />
+Default: (system-provided font-family)</p>
+<p>Font of the inner marking labels within the circle.</p>
+<h4>labelColor</h4>
+<p>Type: <code>Color</code><br />
+Default: <code>Black</code></p>
+<p>Color of the inner marking labels within the circle.</p>
+<h4>labelDisplacement</h4>
+<p>Type: <code>Float</code><br />
+Default: <code>0</code></p>
+<p>Value with which to displace all labels along radial line from center to slider circumference.
+Note: A negative value will move the label closer to the center. A positive value will move the 
+label closer to the circumference</p>
+<h2>Events</h2>
+<h3>change</h3>
+<p>Fired everytime the selection changes.</p>
+<h5>value</h5>
+<p>Type: <code>Float</code> <br />
+The current selected value</p>
+<h3>touchstart</h3>
+<p>Fired everytime the selection starts.</p>
+<h5>value</h5>
+<p>Type: <code>Float</code> <br />
+The current selected value</p>
+<h3>touchend</h3>
+<p>Fired everytime the selection stops.</p>
+<h5>value</h5>
+<p>Type: <code>Float</code> <br />
+The current selected value</p>
+<h1>ABOUT THE AUTHOR</h1>
+<p>I'm a web enthusiast located in Germany and in charge of http://www.titaniumcontrols.com</p>
+<p>Follow me on twitter: @marcelpociot / @TitaniumCTRLs</p>
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img alt="Bitdeli Badge" src="https://d2weczhvl823v0.cloudfront.net/mpociot/ticircularslider/trend.png" /></a></p>

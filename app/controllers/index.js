@@ -56,9 +56,9 @@ function openCircularProgressBarView(){
     Alloy.createController("circularProgressBar").getView().open();
 }
 
-function openCircularBtn(){
-    Ti.API.info("openCircularBtn!!");
-    Alloy.createController("openCircularBtn").getView().open();
+function openTiCircularSliderBtn(){
+    Ti.API.info("TiCircularSliderBtn!!");
+    Alloy.createController("TiCircularSliderBtn").getView().open();
 }
 
 

@@ -45,7 +45,7 @@ exports.init = function () {
 		            color:  _.has(args, 'btnBackgroundColor') ? args.btnBackgroundColor: 'white',
 		            offset: 0.50
 		        }, {
-		            color: _.has(args, 'btnOnColor') ? args.btnOffColor: 'gray',
+		            color: _.has(args, 'btnOffColor') ? args.btnOffColor: 'gray',
 		            offset: 0.50
 		        }
 	    	]		
@@ -115,7 +115,7 @@ exports.init = function () {
 	                color:  _.has(args, 'btnBackgroundColor') ? args.btnBackgroundColor: 'white',
 	                offset: 0.50
 	            }, {
-	                color: _.has(args, 'btnOnColor') ? args.btnOffColor: 'gray',
+	                color: _.has(args, 'btnOffColor') ? args.btnOffColor: 'gray',
 	                offset: 0.50
 	            }
 	        ]	

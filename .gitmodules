@@ -7,3 +7,6 @@
 [submodule "app/widgets/photogrid"]
 	path = app/widgets/photogrid
 	url = https://github.com/kgividen/photogrid.git
+[submodule "app/widgets/TiCircularSliderBtnWidget"]
+	path = app/widgets/TiCircularSliderBtnWidget
+	url = ../TiCircularSliderBtnWidget

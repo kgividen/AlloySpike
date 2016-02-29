@@ -1,0 +1,7 @@
+<Alloy>
+    <Window id="win" backgroundColor="white">
+        <Widget id="btn" src="TiCircularSliderBtnWidget"/>
+        <Widget id="btn2" top="150" src="TiCircularSliderBtnWidget"/>
+        <Button onClick="close">Close</Button>
+    </Window>
+</Alloy>

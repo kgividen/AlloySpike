@@ -14,9 +14,8 @@
 	        <Button id="clearRatingView" onClick="clearRating">Clear Ratings</Button>
 	        <Button id="openScrollableView" onClick="openScrollableView">Open Scrollable View</Button>
 	        <Button id="openPhotoGrid" onClick="openPhotoGrid">Open Photo Grid View</Button>
-	        <Button id="openCircularSliderView" onClick="openCircularSliderView">Open Circular Slider View</Button>
-	        <Button id="openCircularProgressBar" onClick="openCircularProgressBarView">Open Circular Progress Bar View</Button>
 	        <Button id="openTiCircularSliderBtn" onClick="openTiCircularSliderBtn">Open TiCircularSliderBtn</Button>
+	        <Button id="openTiCircularSliderBtnWidget" onClick="openTiCircularSliderBtnWidget">Open TiCircularSliderBtnWidget</Button>
    		</ScrollView>	
     </Window>
 </Alloy>

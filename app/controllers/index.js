@@ -46,21 +46,15 @@ function openLinkInStore(){
     Ti.Platform.openURL('itms://itunes.apple.com/us/app/fun-memory-game/id881939773?mt=8&uo=4');
 }
 
-function openCircularSliderView(){
-    Ti.API.info("open circular slider View!!");
-    Alloy.createController("circularSlider").getView().open();
-}
-
-function openCircularProgressBarView(){
-    Ti.API.info("open circular progress bar View!!");
-    Alloy.createController("circularProgressBar").getView().open();
-}
-
 function openTiCircularSliderBtn(){
     Ti.API.info("TiCircularSliderBtn!!");
     Alloy.createController("TiCircularSliderBtn").getView().open();
 }
 
+function openTiCircularSliderBtnWidget(){
+    Ti.API.info("TiCircularSliderBtnWidget!!");
+    Alloy.createController("TiCircularSliderBtnWidget").getView().open();
+}
 
 function openPhotoGrid(){
     var data = [

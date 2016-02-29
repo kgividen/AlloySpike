@@ -12,6 +12,6 @@
         "com.netsmartcompany.rating": "*",
         "AlloyCountDownWidget": "*",
         "de.manumaticx.photogrid": "*",
-        "btnCircularSlider": "1.0"
+        "TiCircularSliderBtnWidget": "1.0"
     }
 }

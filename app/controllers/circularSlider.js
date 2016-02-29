@@ -22,6 +22,11 @@ var sliderView2 = TiCircularSlider.createView({
     // maximumValue: "50.0f"
 });
 
+$.win.addEventListener('open',function(e){
+	Ti.API.info("setting to 80!!!!");
+	sliderView.setValue(80); 
+});
+
 
 function setTo40 () {
 	sliderView.setProgress(40);	
